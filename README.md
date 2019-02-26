@@ -4,13 +4,15 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Complete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| Pseudocode / actual code | Incomplete
-|Day 5| Initial Clickable Model  | Incomplete
-|Day 6| MVP | Incomplete
-|Day 7| Present | Incomplete
+|Day 1 -26th| Project Description, Wireframes / Priority Matrix / Functional Components | Complete
+|Day 2 -27th| Core Application Structure / Components / Database| Incomplete
+|Day 3 -28th| Code Day | Incomplete
+|Day 4 -1st| Code Day | Incomplete
+|Day 5 -2nd| MVP | Incomplete
+|Day 6 -3rd| Post MVP Coding | Incomplete
+|Day 7 -4th| Post MVP Coding | Incomplete
+|Day 8 -5th| Post MVP Coding | Incomplete
+|Day 9 -6th| Present | Incomplete
 
 
 ## Project Description
