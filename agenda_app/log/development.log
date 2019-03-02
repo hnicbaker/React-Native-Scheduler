@@ -1254,3 +1254,289 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/appointments" for 144.121.201.14 at 2019-03-01 15:58:07 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 12:50:37 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 26ms (Views: 17.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 13:49:37 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 13:55:32 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 14:17:10 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 14:27:29 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 14:55:59 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 14:56:15 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments/add" for 144.121.201.14 at 2019-03-02 15:57:23 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/appointments/add"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/appointments/post" for 144.121.201.14 at 2019-03-02 15:58:13 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/appointments/post"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/appointments/post" for 144.121.201.14 at 2019-03-02 16:03:37 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/appointments/post"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/appointment/post" for 144.121.201.14 at 2019-03-02 16:04:24 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/appointment/post"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-02 16:06:26 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Blah ", "time"=>"1pm", "date"=>"08-21-1992", "description"=>"Gdshdsfhgdsh", "calendar"=>"Work", "appointment"=>{"name"=>"Blah ", "time"=>"1pm", "date"=>"08-21-1992", "description"=>"Gdshdsfhgdsh", "calendar"=>"Work"}}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[36mAppointment Create (29.7ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Blah "], ["time", "13:00:00"], ["description", "Gdshdsfhgdsh"], ["calendar", "Work"], ["created_at", "2019-03-02 21:06:26.917058"], ["updated_at", "2019-03-02 21:06:26.917058"]]
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Redirected to https://67eb8b16.ngrok.io/appointments/6
+Completed 302 Found in 64ms (ActiveRecord: 42.0ms)
+
+
+Started GET "/appointments/6" for 144.121.201.14 at 2019-03-02 16:06:27 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-02 16:16:25 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Blah blah biddable ;wif", "time"=>"12pm", "date"=>"2016-03-20", "description"=>"Kgflgf", "calendar"=>"", "selected2"=>"key1", "appointment"=>{"name"=>"Blah blah biddable ;wif", "time"=>"12pm", "date"=>"2016-03-20", "description"=>"Kgflgf", "calendar"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[36mAppointment Create (2.4ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Blah blah biddable ;wif"], ["time", "12:00:00"], ["date", "2016-03-20"], ["description", "Kgflgf"], ["calendar", ""], ["created_at", "2019-03-02 21:16:25.503787"], ["updated_at", "2019-03-02 21:16:25.503787"]]
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Redirected to https://67eb8b16.ngrok.io/appointments/7
+Completed 302 Found in 43ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/appointments/7" for 144.121.201.14 at 2019-03-02 16:16:25 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-02 16:17:34 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Dfhgdah", "time"=>"12pm", "date"=>"2018-02-02", "description"=>"Dang", "calendar"=>"", "selected2"=>"Personal", "appointment"=>{"name"=>"Dfhgdah", "time"=>"12pm", "date"=>"2018-02-02", "description"=>"Dang", "calendar"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dfhgdah"], ["time", "12:00:00"], ["date", "2018-02-02"], ["description", "Dang"], ["calendar", ""], ["created_at", "2019-03-02 21:17:34.450276"], ["updated_at", "2019-03-02 21:17:34.450276"]]
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Redirected to https://67eb8b16.ngrok.io/appointments/8
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/appointments/8" for 144.121.201.14 at 2019-03-02 16:17:34 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-02 16:33:15 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Gdhfgdkh", "time"=>"12pm", "date"=>"2016-02-02", "description"=>"Gangs", "calendar"=>"", "selected2"=>"Personal", "appointment"=>{"name"=>"Gdhfgdkh", "time"=>"12pm", "date"=>"2016-02-02", "description"=>"Gangs", "calendar"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[36mAppointment Create (0.8ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Gdhfgdkh"], ["time", "12:00:00"], ["date", "2016-02-02"], ["description", "Gangs"], ["calendar", ""], ["created_at", "2019-03-02 21:33:15.909272"], ["updated_at", "2019-03-02 21:33:15.909272"]]
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Redirected to https://67eb8b16.ngrok.io/appointments/9
+Completed 302 Found in 36ms (ActiveRecord: 19.7ms)
+
+
+Started GET "/appointments/9" for 144.121.201.14 at 2019-03-02 16:33:16 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-02 16:38:55 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Sdgsdg", "time"=>"10pm", "date"=>"", "description"=>"Sdfdsg", "calendar"=>"Work", "chosenDate"=>"2018-06-04T04:00:00.000Z", "appointment"=>{"name"=>"Sdgsdg", "time"=>"10pm", "date"=>"", "description"=>"Sdfdsg", "calendar"=>"Work"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[36mAppointment Create (0.8ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sdgsdg"], ["time", "22:00:00"], ["description", "Sdfdsg"], ["calendar", "Work"], ["created_at", "2019-03-02 21:38:55.809634"], ["updated_at", "2019-03-02 21:38:55.809634"]]
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Redirected to https://67eb8b16.ngrok.io/appointments/10
+Completed 302 Found in 23ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/appointments/10" for 144.121.201.14 at 2019-03-02 16:38:55 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 16:40:26 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 16:41:25 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-02 16:41:42 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (2.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 2.4ms)
+
+

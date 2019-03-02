@@ -10,9 +10,14 @@ import axios from 'axios';
 
 export default class Calendar extends React.Component {
 
-  state = {
-    appointments: []
-  };
+  constructor(props) {
+	  super(props);
+	
+	  this.state = {
+      appointments: []
+    };
+    
+	}
   
   getAppointments = async () => {
     try {
@@ -25,6 +30,19 @@ export default class Calendar extends React.Component {
       console.error(e)
     }
   }
+
+  deleteAppointments = async (id) => {
+
+		axios.delete('https://67eb8b16.ngrok.io/appointments/'+id)
+		.then(function(response) {
+			const data = response.data;
+			alert(data.msg);
+			this.getAppointments();
+		})
+		.catch(function(err) {
+			alert(err)
+		})
+	};
 
   componentDidMount() {
    this.getAppointments()
@@ -42,7 +60,7 @@ export default class Calendar extends React.Component {
     />
   </View>
 
-  <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text>
+  {/* <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text> */}
 
         </ScrollView>
 </View>
