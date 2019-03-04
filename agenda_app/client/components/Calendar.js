@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   ScrollView,
+  Image,
   Text,
   View,
   StyleSheet
@@ -21,7 +22,7 @@ export default class Calendar extends React.Component {
   
   getAppointments = async () => {
     try {
-      const response = await axios.get('https://67eb8b16.ngrok.io/appointments')
+      const response = await axios.get('http://17a0c694.ngrok.io/appointments')
       const appointments = response.data.appointments
       this.setState({appointments})
 
@@ -33,7 +34,7 @@ export default class Calendar extends React.Component {
 
   deleteAppointments = async (id) => {
 
-		axios.delete('https://67eb8b16.ngrok.io/appointments/'+id)
+		axios.delete('http://17a0c694.ngrok.io/appointments/'+id)
 		.then(function(response) {
 			const data = response.data;
 			alert(data.msg);
@@ -53,21 +54,17 @@ export default class Calendar extends React.Component {
     return (
       <View>
         <ScrollView >
-         
-        <View style={styles.container}>
+
+
     <CalendarStrip
       style={{height:150, paddingTop: 20, paddingBottom: 10}}
     />
-  </View>
-
+ 
   {/* <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text> */}
 
         </ScrollView>
-</View>
+    </View>
     );
   }
   }
 
-  const styles = StyleSheet.create({
-    container: { flex: 1 }
-  });

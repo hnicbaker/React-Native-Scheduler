@@ -19,7 +19,7 @@ export default class AddForm extends Component {
 
 	formSubmit = () => {
         
-	    axios.post('https://67eb8b16.ngrok.io/appointments', this.state)
+	    axios.post('http://17a0c694.ngrok.io/appointments', this.state)
 		.then(function(response) {
 			const data = response.data;
 		})
