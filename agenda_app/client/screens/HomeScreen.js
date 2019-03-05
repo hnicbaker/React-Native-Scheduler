@@ -8,12 +8,13 @@ import Login from '../components/Login';
 
 
 export default class HomeScreen extends React.Component {
- 
+  
 
   render() {
     return (
       <ScrollView style={styles.container}>
         <Header />
+        
         <Login />
       </ScrollView>
     );

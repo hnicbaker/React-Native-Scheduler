@@ -25,7 +25,7 @@ HomeStack.navigationOptions = {
 };
 
 const CalendarStack = createStackNavigator({
-  Links: CalendarScreen,
+  CalendarScreen: CalendarScreen,
 });
 
 CalendarStack.navigationOptions = {
@@ -45,6 +45,8 @@ export default createBottomTabNavigator({
   CalendarStack,
 },
 ({
-  tabBarOptions: {activeTintColor:"grey"} 
+  tabBarOptions: {
+    activeTintColor:"grey"
+  } 
 })
 );

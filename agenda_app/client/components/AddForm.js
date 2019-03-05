@@ -14,18 +14,28 @@ export default class AddForm extends Component {
             description:'', 
             calendar:'',
            
-        }
+		}
+		this.formSubmit = this.formSubmit.bind(this)
     }
 
-	formSubmit = (e) => {
+	formSubmit = () => {
 	    axios.post('http://0441a3d7.ngrok.io/appointments', this.state)
 		.then(function(response) {
 			const data = response.data;
-			console.log(data)
+			console.log(data)	
 		})
+
+		this.setState({
+			name: '',
+			time: '',
+            date: '', 
+            description:'', 
+            calendar:'',
+			})
 	}
 
 	render() {
+
 		return (
             <View>
 			<Content>
@@ -62,7 +72,7 @@ export default class AddForm extends Component {
                  
 			
 					<Button rounded light style={styles.submitBtn} onPress={this.formSubmit} >
-						<Text>Submit</Text>
+						<Text>Add Appointment</Text>
 					</Button>
 				</Form>
 			</Content>

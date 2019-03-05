@@ -10,5 +10,5 @@ User.create(username: 'Example User', password: 'examplePassword');
 Appointment.create(name: 'Hair Appointment', time: '2pm', date: 'March 6th 2019', description: 'Hair Cut & Color with Stacy', calendar: 'Personal' )
 Appointment.create(name: 'Morning Stand-Up', time: '10am', date: 'March 7th 2019', description: 'Status Update Meeting', calendar: 'Work' )
 Appointment.create(name: 'Dentist Appointment', time: '12pm', date: 'March 8th 2019', description: 'Filling', calendar: 'Personal' )
-Appointment.create(name: 'Date', time: '8pm', date: 'March 6th 2019', description: 'Drinks with Bob', calendar: 'Personal' )
+Appointment.create(name: 'Date', time: '8pm', date: 'March 9th 2019', description: 'Drinks with Bob', calendar: 'Personal' )
 Appointment.create(name: 'Meeting', time: '9am', date: 'March 8th 2019', description: 'Salary Negotiation', calendar: 'Work' )

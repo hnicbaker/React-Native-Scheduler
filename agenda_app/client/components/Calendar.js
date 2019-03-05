@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 import CalendarStrip from 'react-native-calendar-strip';
 import AddForm from './AddForm';
-import Login from './Login';
 import axios from 'axios';
 import moment from 'moment';
 import { Button } from 'native-base';
@@ -63,18 +62,18 @@ export default class Calendar extends React.Component {
 	};
 
   
- showForm = () => {
-  if (this.state.buttonPressed === true) {
-    return(
-    <AddForm />
-    )
-  }else 
-  return(
-    <Button rounded light style={styles.button} onPress={this.onPressButton}>
-    <Text>Add Appointment</Text>
-  </Button>
-  )
- }
+//  showForm = () => {
+//   if (this.state.buttonPressed === true) {
+//     return(
+//     <AddForm />
+//     )
+//   }else 
+//   return(
+//     <Button rounded light style={styles.button} onPress={this.onPressButton}>
+//     <Text>Add Appointment</Text>
+//   </Button>
+//   )
+//  }
   
   
 
@@ -110,8 +109,6 @@ export default class Calendar extends React.Component {
 
           <ScrollView>
           
-        {this.showForm()}
-      
         </ScrollView>
     </View>
     );
@@ -127,7 +124,9 @@ export default class Calendar extends React.Component {
       },
 
       appointments: {
-        alignSelf: 'center'
+        alignSelf: 'center', 
+        fontFamily: 'AmericanTypewriter-Light', 
+        color: 'black'
       },
     
      
