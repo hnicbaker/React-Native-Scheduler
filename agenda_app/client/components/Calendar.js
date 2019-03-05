@@ -26,9 +26,9 @@ export default class Calendar extends React.Component {
   
   
   
-  getAppointments = async () => {
+  getAppointments = async (date) => {
     try {
-      const response = await axios.get('http://17a0c694.ngrok.io/appointments')
+      const response = await axios.post('http://0efae641.ngrok.io/appointments', { date: date, get: "true" })
       const appointments = response.data.appointments
       this.setState({appointments})
 
@@ -76,7 +76,7 @@ export default class Calendar extends React.Component {
       
       let selectedDate = (date.format('MMMM Do YYYY'))
       console.log(selectedDate)
-      // this.getAppointments()
+      this.getAppointments(selectedDate)
     }}
       daySelectionAnimation={{type: 'border', duration: 200, borderWidth: 1, borderHighlightColor: 'grey'}}
       style={{height:150, paddingTop: 20, paddingBottom: 10}}
@@ -86,7 +86,7 @@ export default class Calendar extends React.Component {
 
     {/* <AddForm /> */}
  
-  {/* <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text> */}
+  <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text>
 
         </ScrollView>
     </View>

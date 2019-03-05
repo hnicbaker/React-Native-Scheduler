@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
     def index
-        @appointments = Appointment.all.where("date = #{params[:date]}")
+        @appointments = Appointment.all
         render json: {
           appointments: @appointments
         }
@@ -18,10 +18,17 @@ class AppointmentsController < ApplicationController
       end
     
       def create
-        appointment = Appointment.new(appointment_params)
-    
-        if appointment.save
-          redirect_to appointment
+        if params[:get]
+          @appointments = Appointment.where(["date = :date", { date: params[:date] }])
+          render json: {
+            appointments: @appointments
+          }
+        else
+          appointment = Appointment.new(appointment_params)
+      
+          if appointment.save
+            redirect_to appointment
+          end
         end
       end
     
@@ -42,7 +49,7 @@ class AppointmentsController < ApplicationController
     
       private
       def appointment_params
-       params.require(:appointment).permit(:name, :time, :date, :description, :calendar)
+       params.require(:appointment).permit(:name, :time, :date, :description, :calendar, :get)
       end
     
 end

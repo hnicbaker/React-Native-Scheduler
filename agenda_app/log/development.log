@@ -2065,3 +2065,672 @@ HINT:  No operator matches the given name and argument type(s). You might need t
 : SELECT "appointments".* FROM "appointments" WHERE (date = 2016)):
   
 app/controllers/appointments_controller.rb:4:in `index'
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (233.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (213.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (589.8ms)[0m  [1m[35mCREATE DATABASE "agenda_app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (315.0ms)[0m  [1m[35mCREATE DATABASE "agenda_app_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (1.0ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "appointments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" bigserial primary key, "name" character varying, "time" time, "date" date, "description" character varying, "calendar" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190227195147)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190227194258);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-05 01:38:45.766352"], ["updated_at", "2019-03-05 01:38:45.766352"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "appointments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" bigserial primary key, "name" character varying, "time" time, "date" date, "description" character varying, "calendar" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190227195147)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190227194258);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-05 01:38:45.841348"], ["updated_at", "2019-03-05 01:38:45.841348"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-03-05 01:38:45.845353"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Example User"], ["password", "examplePassword"], ["created_at", "2019-03-05 01:38:45.888696"], ["updated_at", "2019-03-05 01:38:45.888696"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAppointment Create (0.7ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Hair Appointment"], ["time", "14:00:00"], ["date", "2019-03-06"], ["description", "Hair Cut & Color with Stacy"], ["calendar", "Personal"], ["created_at", "2019-03-05 01:38:45.907099"], ["updated_at", "2019-03-05 01:38:45.907099"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Morning Stand-Up"], ["time", "10:00:00"], ["date", "2019-03-07"], ["description", "Status Update Meeting"], ["calendar", "Work"], ["created_at", "2019-03-05 01:38:45.917184"], ["updated_at", "2019-03-05 01:38:45.917184"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAppointment Create (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dentist Appointment"], ["time", "12:00:00"], ["date", "2019-03-08"], ["description", "Filling"], ["calendar", "Personal"], ["created_at", "2019-03-05 01:38:45.920466"], ["updated_at", "2019-03-05 01:38:45.920466"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Date"], ["time", "20:00:00"], ["date", "2019-03-06"], ["description", "Drinks with Bob"], ["calendar", "Personal"], ["created_at", "2019-03-05 01:38:45.928290"], ["updated_at", "2019-03-05 01:38:45.928290"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Meeting"], ["time", "09:00:00"], ["date", "2019-03-08"], ["description", "Salary Negotiation"], ["calendar", "Work"], ["created_at", "2019-03-05 01:38:45.931669"], ["updated_at", "2019-03-05 01:38:45.931669"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(967069047254153445)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(967069047254153445)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:41:11 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"2016-02-02", "appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (1.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 2016-02-02)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 3.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedFunction: ERROR:  operator does not exist: date = integer
+LINE 1: ... "appointments".* FROM "appointments" WHERE (date = 2016-02-...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "appointments".* FROM "appointments" WHERE (date = 2016-02-02)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (8052.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (198.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (243.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (506.7ms)[0m  [1m[35mCREATE DATABASE "agenda_app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (463.3ms)[0m  [1m[35mCREATE DATABASE "agenda_app_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(967069047254153445)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190227194258)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190227194258_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190227194258"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateAppointments (20190227195147)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" bigserial primary key, "name" character varying, "time" time, "date" character varying, "description" character varying, "calendar" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190227195147_create_appointments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190227195147"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-05 01:43:38.436508"], ["updated_at", "2019-03-05 01:43:38.436508"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(967069047254153445)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Example User"], ["password", "examplePassword"], ["created_at", "2019-03-05 01:43:45.306751"], ["updated_at", "2019-03-05 01:43:45.306751"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAppointment Create (0.5ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Hair Appointment"], ["time", "14:00:00"], ["date", "March 6th 2019"], ["description", "Hair Cut & Color with Stacy"], ["calendar", "Personal"], ["created_at", "2019-03-05 01:43:45.318937"], ["updated_at", "2019-03-05 01:43:45.318937"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Morning Stand-Up"], ["time", "10:00:00"], ["date", "March 7th 2019"], ["description", "Status Update Meeting"], ["calendar", "Work"], ["created_at", "2019-03-05 01:43:45.322238"], ["updated_at", "2019-03-05 01:43:45.322238"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dentist Appointment"], ["time", "12:00:00"], ["date", "March 8th 2019"], ["description", "Filling"], ["calendar", "Personal"], ["created_at", "2019-03-05 01:43:45.324059"], ["updated_at", "2019-03-05 01:43:45.324059"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Date"], ["time", "20:00:00"], ["date", "March 6th 2019"], ["description", "Drinks with Bob"], ["calendar", "Personal"], ["created_at", "2019-03-05 01:43:45.325787"], ["updated_at", "2019-03-05 01:43:45.325787"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Meeting"], ["time", "09:00:00"], ["date", "March 8th 2019"], ["description", "Salary Negotiation"], ["calendar", "Work"], ["created_at", "2019-03-05 01:43:45.327668"], ["updated_at", "2019-03-05 01:43:45.327668"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:44:25 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"2016-02-02", "appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 2016-02-02)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 3.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedFunction: ERROR:  operator does not exist: character varying = integer
+LINE 1: ... "appointments".* FROM "appointments" WHERE (date = 2016-02-...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "appointments".* FROM "appointments" WHERE (date = 2016-02-02)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:45:00 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"2016-02-02", "appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (0.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 2016-02-02)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedFunction: ERROR:  operator does not exist: character varying = integer
+LINE 1: ... "appointments".* FROM "appointments" WHERE (date = 2016-02-...
+                                                             ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "appointments".* FROM "appointments" WHERE (date = 2016-02-02)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:46:39 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"2016-02-02", "appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:47:14 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"2016-02-02", "appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 2.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:48:08 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"2016-02-02", "appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (1.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 4.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:48:45 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>{"date"=>"2016-02-02"}}
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments?date=%222016-02-02%22" for 127.0.0.1 at 2019-03-04 20:49:43 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"date"=>"\"2016-02-02\"", "appointment"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: appointment):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%20date:%20%222016-02-02%22%7D" for 127.0.0.1 at 2019-03-04 20:50:17 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>"{ date: \"2016-02-02\"}"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{ date: \"2016-02-02\"}":String
+Did you mean?  print):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%20%22date%22:%20%222016-02-02%22%7D" for 127.0.0.1 at 2019-03-04 20:50:29 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>"{ \"date\": \"2016-02-02\"}"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{ \"date\": \"2016-02-02\"}":String
+Did you mean?  print):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:51:05 -0500
+Processing by AppointmentsController#index as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: appointment):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments" for 127.0.0.1 at 2019-03-04 20:52:14 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 20ms (Views: 10.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:04:32 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{\"date\":\"March 6th 2019\"}":String
+Did you mean?  print):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:05:55 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{\"date\":\"March 6th 2019\"}":String
+Did you mean?  print):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:07:12 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{\"date\":\"March 6th 2019\"}":String
+Did you mean?  print):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:08:26 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:4:in `index'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:10:02 -0500
+  
+SyntaxError (/Users/heatherbaker/GA/Project_4/Project4/agenda_app/app/controllers/appointments_controller.rb:3: syntax error, unexpected ']', expecting '}'
+...e: params[:appointment][:date]])
+...                               ^):
+  
+app/controllers/appointments_controller.rb:3: syntax error, unexpected ']', expecting '}'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:10:38 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/appointments_controller.rb:3:in `[]'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:11:18 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/appointments_controller.rb:3:in `[]'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments?appointment=%7B%22date%22:%22March+6th+2019%22%7D" for 144.121.201.14 at 2019-03-04 21:12:30 -0500
+Processing by AppointmentsController#index as HTML
+  Parameters: {"appointment"=>"{\"date\":\"March 6th 2019\"}"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/appointments_controller.rb:3:in `[]'
+app/controllers/appointments_controller.rb:3:in `index'
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 21:17:43 -0500
+Processing by AppointmentsController#index as HTML
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: appointment):
+  
+app/controllers/appointments_controller.rb:45:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:20:02 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 4.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:23:in `create'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:21:30 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:23:in `create'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:21:57 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 2.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:23:in `create'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:22:27 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = :date)[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 2.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near ":"
+LINE 1: ...CT "appointments".* FROM "appointments" WHERE (date = :date)
+                                                                 ^
+: SELECT "appointments".* FROM "appointments" WHERE (date = :date)):
+  
+app/controllers/appointments_controller.rb:23:in `create'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:23:02 -0500
+  
+SyntaxError (/Users/heatherbaker/GA/Project_4/Project4/agenda_app/app/controllers/appointments_controller.rb:22: syntax error, unexpected tSTRING_DEND, expecting ']'
+...:date", { date: params[:date]}}])
+...                               ^
+/Users/heatherbaker/GA/Project_4/Project4/agenda_app/app/controllers/appointments_controller.rb:25: syntax error, unexpected tSTRING_DEND, expecting '}'
+/Users/heatherbaker/GA/Project_4/Project4/agenda_app/app/controllers/appointments_controller.rb:55: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/appointments_controller.rb:22: syntax error, unexpected tSTRING_DEND, expecting ']'
+app/controllers/appointments_controller.rb:25: syntax error, unexpected tSTRING_DEND, expecting '}'
+app/controllers/appointments_controller.rb:55: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:23:22 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:30
+  [1m[36mAppointment Create (1.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["date", "March 6th 2019"], ["created_at", "2019-03-05 02:23:22.699049"], ["updated_at", "2019-03-05 02:23:22.699049"]]
+  ↳ app/controllers/appointments_controller.rb:30
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:30
+Redirected to 
+Completed 500 Internal Server Error in 33ms (Views: 10.8ms | ActiveRecord: 19.6ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/appointments_controller.rb:31:in `create'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:23:53 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:24:59 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:25:30 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/appointments?appointment=%7B%20%22date%22:%20%222016-02-02%22%7D" for 127.0.0.1 at 2019-03-04 21:26:10 -0500
+Processing by AppointmentsController#index as */*
+  Parameters: {"appointment"=>"{ \"date\": \"2016-02-02\"}"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `permit' for "{ \"date\": \"2016-02-02\"}":String
+Did you mean?  print):
+  
+app/controllers/appointments_controller.rb:52:in `appointment_params'
+app/controllers/appointments_controller.rb:3:in `index'
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:28:24 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-04 21:29:20 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
