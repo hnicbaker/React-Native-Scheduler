@@ -1,10 +1,9 @@
-const tintColor = 'pink';
+const tintColor = 'darkgrey';
 
 export default {
   tintColor,
   tabIconDefault: 'lightgrey',
   tabIconSelected: tintColor,
-  // tabBarLabel: tintColor,
   tabBar: 'pink',
   errorBackground: 'pink',
   errorText: '#fff',

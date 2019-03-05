@@ -1812,3 +1812,115 @@ Processing by AppointmentsController#index as HTML
 Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 18:26:14 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (1.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 18:27:59 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 18:29:32 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 18:36:32 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 18:39:02 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:04:41 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:48:09 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:48:39 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:52:52 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:55:03 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:55:57 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:56:11 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:56:28 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 19:59:25 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 20:01:25 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/appointments" for 144.121.201.14 at 2019-03-04 20:02:03 -0500
+Processing by AppointmentsController#index as HTML
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments"[0m
+  ↳ app/controllers/appointments_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+

@@ -1,13 +1,16 @@
 import React from 'react';
 import {
   ScrollView,
-  Image,
-  Text,
   View,
-  StyleSheet
+  StyleSheet, 
+  Text
 } from 'react-native';
 import CalendarStrip from 'react-native-calendar-strip';
+import AddForm from './AddForm';
 import axios from 'axios';
+import moment from 'moment';
+
+
 
 export default class Calendar extends React.Component {
 
@@ -15,10 +18,14 @@ export default class Calendar extends React.Component {
 	  super(props);
 	
 	  this.state = {
-      appointments: []
+      appointments: [],
+      SelectedDate: ''
     };
-    
-	}
+  
+
+  }
+  
+  
   
   getAppointments = async () => {
     try {
@@ -30,7 +37,13 @@ export default class Calendar extends React.Component {
     } catch(e) {
       console.error(e)
     }
+    let date = CalendarStrip.getSelectedDate
+    console.log(date)
   }
+
+
+
+ 
 
   deleteAppointments = async (id) => {
 
@@ -49,6 +62,9 @@ export default class Calendar extends React.Component {
    this.getAppointments()
   }
 
+  
+  
+
   render() {
   
     return (
@@ -57,8 +73,16 @@ export default class Calendar extends React.Component {
 
 
     <CalendarStrip
+    onDateSelected={(date)=>{
+      console.log(date)
+    }}
+      daySelectionAnimation={{type: 'border', duration: 200, borderWidth: 1, borderHighlightColor: 'grey'}}
       style={{height:150, paddingTop: 20, paddingBottom: 10}}
     />
+
+
+
+    {/* <AddForm /> */}
  
   {/* <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text> */}
 

@@ -8,6 +8,7 @@ export default class Login extends Component {
 	render() {
 		return (
             <View>
+           <Text style={ { fontFamily: 'AmericanTypewriter-Light', alignSelf: 'center', fontSize: 25 }}>Please Log In. {"\n"} </Text>
 			<Content>
 				<Form style={styles.formOuter}>
 					<Item floatingLabel style={styles.formInput}>
@@ -22,7 +23,7 @@ export default class Login extends Component {
                    	
 				</Form>
                 <Button rounded light style={styles.button}>
-            <Text>Sign In</Text>
+            <Text>Submit</Text>
           </Button>
 			</Content>
             </View>
