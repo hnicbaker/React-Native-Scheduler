@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create(username: 'Example User', password: 'examplePassword');
 
-Appointment.create(name: 'Hair Appointment', time: '2pm', date: '2019-03-06', description: 'Hair Cut & Color with Stacy', calendar: 'Personal' )
-Appointment.create(name: 'Morning Stand-Up', time: '10am', date: '2016-03-10', description: 'Status Update Meeting', calendar: 'Work' )
-Appointment.create(name: 'Dentist Appointment', time: '12pm', date: '2016-03-15', description: 'Filling', calendar: 'Personal' )
-Appointment.create(name: 'Date', time: '8pm', date: '2016-03-20', description: 'Drinks with Bob', calendar: 'Personal' )
-Appointment.create(name: 'Meeting', time: '9am', date: '2016-03-20', description: 'Salary Negotiation', calendar: 'Work' )
+Appointment.create(name: 'Hair Appointment', time: '2pm', date: 'March 6th 2019', description: 'Hair Cut & Color with Stacy', calendar: 'Personal' )
+Appointment.create(name: 'Morning Stand-Up', time: '10am', date: 'March 7th 2019', description: 'Status Update Meeting', calendar: 'Work' )
+Appointment.create(name: 'Dentist Appointment', time: '12pm', date: 'March 8th 2019', description: 'Filling', calendar: 'Personal' )
+Appointment.create(name: 'Date', time: '8pm', date: 'March 6th 2019', description: 'Drinks with Bob', calendar: 'Personal' )
+Appointment.create(name: 'Meeting', time: '9am', date: 'March 8th 2019', description: 'Salary Negotiation', calendar: 'Work' )

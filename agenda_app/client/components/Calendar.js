@@ -18,8 +18,7 @@ export default class Calendar extends React.Component {
 	  super(props);
 	
 	  this.state = {
-      appointments: [],
-      SelectedDate: ''
+      appointments: []
     };
   
 
@@ -37,8 +36,8 @@ export default class Calendar extends React.Component {
     } catch(e) {
       console.error(e)
     }
-    let date = CalendarStrip.getSelectedDate
-    console.log(date)
+    // let date = CalendarStrip.getSelectedDate
+    // console.log(date)
   }
 
 
@@ -51,16 +50,16 @@ export default class Calendar extends React.Component {
 		.then(function(response) {
 			const data = response.data;
 			alert(data.msg);
-			this.getAppointments();
+			// this.getAppointments();
 		})
 		.catch(function(err) {
 			alert(err)
 		})
 	};
 
-  componentDidMount() {
-   this.getAppointments()
-  }
+  // componentDidMount() {
+  //  this.getAppointments()
+  // }
 
   
   
@@ -74,7 +73,10 @@ export default class Calendar extends React.Component {
 
     <CalendarStrip
     onDateSelected={(date)=>{
-      console.log(date)
+      
+      let selectedDate = (date.format('MMMM Do YYYY'))
+      console.log(selectedDate)
+      // this.getAppointments()
     }}
       daySelectionAnimation={{type: 'border', duration: 200, borderWidth: 1, borderHighlightColor: 'grey'}}
       style={{height:150, paddingTop: 20, paddingBottom: 10}}

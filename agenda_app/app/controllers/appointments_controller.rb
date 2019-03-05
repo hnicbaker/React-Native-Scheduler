@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
     def index
-        @appointments = Appointment.all
+        @appointments = Appointment.all.where("date = #{params[:date]}")
         render json: {
           appointments: @appointments
         }
