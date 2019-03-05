@@ -2734,3 +2734,913 @@ Processing by AppointmentsController#create as HTML
 Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
 
 
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:04 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (7.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 29ms (Views: 14.0ms | ActiveRecord: 11.6ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:06 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:07 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 4th 2019", "get"=>"true", "appointment"=>{"date"=>"March 4th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 4th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:08 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:09 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:10 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:12 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:48:13 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:51:48 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (1.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:51:50 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 4th 2019", "get"=>"true", "appointment"=>{"date"=>"March 4th 2019"}}
+  [1m[36mAppointment Load (1.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 4th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:51:52 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:51:54 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:51:56 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:53:58 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:54:19 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:54:55 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:54:57 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:55:51 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:55:53 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:56:30 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:58:27 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:59:07 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 09:59:26 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:01:19 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:21:11 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 4th 2019", "get"=>"true", "appointment"=>{"date"=>"March 4th 2019"}}
+  [1m[36mAppointment Load (0.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 4th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:21:18 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:21:20 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (241.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (230.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "agenda_app_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (502.1ms)[0m  [1m[35mCREATE DATABASE "agenda_app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (427.0ms)[0m  [1m[35mCREATE DATABASE "agenda_app_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (1.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "appointments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" bigserial primary key, "name" character varying, "time" time, "date" character varying, "description" character varying, "calendar" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190227195147)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190227194258);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-05 15:37:54.696686"], ["updated_at", "2019-03-05 15:37:54.696686"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "appointments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" bigserial primary key, "name" character varying, "time" time, "date" character varying, "description" character varying, "calendar" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190227195147)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190227194258);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-05 15:37:54.755108"], ["updated_at", "2019-03-05 15:37:54.755108"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.8ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-03-05 15:37:54.758739"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Example User"], ["password", "examplePassword"], ["created_at", "2019-03-05 15:37:54.799391"], ["updated_at", "2019-03-05 15:37:54.799391"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mAppointment Create (0.8ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Hair Appointment"], ["time", "14:00:00"], ["date", "March 6th 2019"], ["description", "Hair Cut & Color with Stacy"], ["calendar", "Personal"], ["created_at", "2019-03-05 15:37:54.813409"], ["updated_at", "2019-03-05 15:37:54.813409"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Morning Stand-Up"], ["time", "10:00:00"], ["date", "March 7th 2019"], ["description", "Status Update Meeting"], ["calendar", "Work"], ["created_at", "2019-03-05 15:37:54.824240"], ["updated_at", "2019-03-05 15:37:54.824240"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dentist Appointment"], ["time", "12:00:00"], ["date", "March 8th 2019"], ["description", "Filling"], ["calendar", "Personal"], ["created_at", "2019-03-05 15:37:54.827495"], ["updated_at", "2019-03-05 15:37:54.827495"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mAppointment Create (0.4ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Date"], ["time", "20:00:00"], ["date", "March 6th 2019"], ["description", "Drinks with Bob"], ["calendar", "Personal"], ["created_at", "2019-03-05 15:37:54.836522"], ["updated_at", "2019-03-05 15:37:54.836522"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mAppointment Create (0.2ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "time", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Meeting"], ["time", "09:00:00"], ["date", "March 8th 2019"], ["description", "Salary Negotiation"], ["calendar", "Work"], ["created_at", "2019-03-05 15:37:54.839345"], ["updated_at", "2019-03-05 15:37:54.839345"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:38:18 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:38:19 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (2.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:38:20 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:38:20 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 10th 2019", "get"=>"true", "appointment"=>{"date"=>"March 10th 2019"}}
+  [1m[36mAppointment Load (7.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 10th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:43:57 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (2.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:44:13 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:44:15 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:44:19 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (1.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:44:20 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:44:22 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:45:05 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:45:06 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:45:07 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:45:08 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 4th 2019", "get"=>"true", "appointment"=>{"date"=>"March 4th 2019"}}
+  [1m[36mAppointment Load (7.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 4th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:45:08 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:47:34 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:25 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:33 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:35 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (2.1ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:37 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:38 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (1.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:39 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:39 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:50:41 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:52:35 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:52:38 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (2.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:52:40 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:17 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:20 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:21 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:23 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:24 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 10th 2019", "get"=>"true", "appointment"=>{"date"=>"March 10th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 10th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:25 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:30 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:30 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:31 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:32 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 4th 2019", "get"=>"true", "appointment"=>{"date"=>"March 4th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 4th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:33 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:33 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 10th 2019", "get"=>"true", "appointment"=>{"date"=>"March 10th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 10th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:34 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:55:35 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 10:58:11 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.0ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 11:01:56 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 11:24:01 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (4.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 39ms (Views: 19.0ms | ActiveRecord: 16.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 11:53:45 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:00 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.9ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:04 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (1.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:06 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:07 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:08 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 10th 2019", "get"=>"true", "appointment"=>{"date"=>"March 10th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 10th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:37 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:40 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.2ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:42 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (3.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:45 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:46 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 4th 2019", "get"=>"true", "appointment"=>{"date"=>"March 4th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 4th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:06:47 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:23:36 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.7ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 28ms (Views: 16.9ms | ActiveRecord: 12.7ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:30:00 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 14ms (Views: 5.5ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:30:01 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 7th 2019", "get"=>"true", "appointment"=>{"date"=>"March 7th 2019"}}
+  [1m[36mAppointment Load (0.5ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 7th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:30:03 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 8th 2019", "get"=>"true", "appointment"=>{"date"=>"March 8th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 8th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:30:05 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 9th 2019", "get"=>"true", "appointment"=>{"date"=>"March 9th 2019"}}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 9th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 12:40:39 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (1.8ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 14:11:13 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Library/Ruby/Gems/2.3.0/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Blah ", "time"=>"Blah ", "date"=>"Blah ", "description"=>"Blah ", "calendar"=>"", "appointment"=>{"name"=>"Blah ", "time"=>"Blah ", "date"=>"Blah ", "description"=>"Blah ", "calendar"=>""}}
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:29
+  [1m[36mAppointment Create (16.4ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Blah "], ["date", "Blah "], ["description", "Blah "], ["calendar", ""], ["created_at", "2019-03-05 19:11:13.427266"], ["updated_at", "2019-03-05 19:11:13.427266"]]
+  ↳ app/controllers/appointments_controller.rb:29
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:29
+Redirected to http://0441a3d7.ngrok.io/appointments/6
+Completed 302 Found in 60ms (ActiveRecord: 36.8ms)
+
+
+Started GET "/appointments/6" for 144.121.201.14 at 2019-03-05 14:11:13 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 14:12:31 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"name"=>"Sagsfgsgsf", "time"=>"Sgfgfdg", "date"=>"Gfsdfgfg", "description"=>"Sgsfgfg", "calendar"=>"", "appointment"=>{"name"=>"Sagsfgsgsf", "time"=>"Sgfgfdg", "date"=>"Gfsdfgfg", "description"=>"Sgsfgfg", "calendar"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/appointments_controller.rb:29
+  [1m[36mAppointment Create (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("name", "date", "description", "calendar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sagsfgsgsf"], ["date", "Gfsdfgfg"], ["description", "Sgsfgfg"], ["calendar", ""], ["created_at", "2019-03-05 19:12:31.530386"], ["updated_at", "2019-03-05 19:12:31.530386"]]
+  ↳ app/controllers/appointments_controller.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/appointments_controller.rb:29
+Redirected to http://0441a3d7.ngrok.io/appointments/7
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/appointments/7" for 144.121.201.14 at 2019-03-05 14:12:31 -0500
+Processing by AppointmentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mAppointment Load (0.3ms)[0m  [1m[34mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/appointments_controller.rb:10
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 14:13:05 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 6th 2019", "get"=>"true", "appointment"=>{"date"=>"March 6th 2019"}}
+  [1m[36mAppointment Load (0.6ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 6th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/appointments" for 144.121.201.14 at 2019-03-05 14:13:06 -0500
+Processing by AppointmentsController#create as HTML
+  Parameters: {"date"=>"March 5th 2019", "get"=>"true", "appointment"=>{"date"=>"March 5th 2019"}}
+  [1m[36mAppointment Load (0.4ms)[0m  [1m[34mSELECT "appointments".* FROM "appointments" WHERE (date = 'March 5th 2019')[0m
+  ↳ app/controllers/appointments_controller.rb:23
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Content, Form, Item, Input, Label, Button, Icon, Text, Picker } from 'native-base';
+import { Content, Form, Item, Input, Label, Button, Text } from 'native-base';
 import axios from 'axios';
 
 export default class AddForm extends Component {
@@ -17,11 +17,11 @@ export default class AddForm extends Component {
         }
     }
 
-	formSubmit = () => {
-        
-	    axios.post('http://17a0c694.ngrok.io/appointments', this.state)
+	formSubmit = (e) => {
+	    axios.post('http://0441a3d7.ngrok.io/appointments', this.state)
 		.then(function(response) {
 			const data = response.data;
+			console.log(data)
 		})
 	}
 
@@ -29,7 +29,7 @@ export default class AddForm extends Component {
 		return (
             <View>
 			<Content>
-				<Form style={styles.formOuter}>
+				<Form style={styles.formOuter} >
 					<Item floatingLabel style={styles.formInput}>
 						<Label>Name</Label>
 						<Input
@@ -61,9 +61,8 @@ export default class AddForm extends Component {
 					</Item>
                  
 			
-					<Button block primary iconLeft style={styles.submitBtn} onPress={this.formSubmit.bind(this)}>
-						<Icon name='add' />
-						<Text>Add</Text>
+					<Button rounded light style={styles.submitBtn} onPress={this.formSubmit} >
+						<Text>Submit</Text>
 					</Button>
 				</Form>
 			</Content>
@@ -80,6 +79,7 @@ const styles = StyleSheet.create({
 		marginLeft: 0
 	},
 	submitBtn: {
-		marginTop: 20
+		marginTop: 20, 
+		alignSelf: 'center'
 	}
 });

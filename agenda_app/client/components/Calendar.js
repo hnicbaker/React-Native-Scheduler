@@ -7,8 +7,10 @@ import {
 } from 'react-native';
 import CalendarStrip from 'react-native-calendar-strip';
 import AddForm from './AddForm';
+import Login from './Login';
 import axios from 'axios';
 import moment from 'moment';
+import { Button } from 'native-base';
 
 
 
@@ -18,7 +20,8 @@ export default class Calendar extends React.Component {
 	  super(props);
 	
 	  this.state = {
-      appointments: []
+      appointments: [], 
+      buttonPressed: false 
     };
   
 
@@ -28,7 +31,7 @@ export default class Calendar extends React.Component {
   
   getAppointments = async (date) => {
     try {
-      const response = await axios.post('http://0efae641.ngrok.io/appointments', { date: date, get: "true" })
+      const response = await axios.post('http://0441a3d7.ngrok.io/appointments', { date: date, get: "true" })
       const appointments = response.data.appointments
       this.setState({appointments})
 
@@ -36,12 +39,14 @@ export default class Calendar extends React.Component {
     } catch(e) {
       console.error(e)
     }
-    // let date = CalendarStrip.getSelectedDate
-    // console.log(date)
   }
 
 
-
+  onPressButton = () => {
+      this.setState({buttonPressed:true})
+      console.log(this.state.buttonPressed)
+    }
+  
  
 
   deleteAppointments = async (id) => {
@@ -57,18 +62,27 @@ export default class Calendar extends React.Component {
 		})
 	};
 
-  // componentDidMount() {
-  //  this.getAppointments()
-  // }
-
+  
+ showForm = () => {
+  if (this.state.buttonPressed === true) {
+    return(
+    <AddForm />
+    )
+  }else 
+  return(
+    <Button rounded light style={styles.button} onPress={this.onPressButton}>
+    <Text>Add Appointment</Text>
+  </Button>
+  )
+ }
   
   
 
   render() {
-  
+    
     return (
       <View>
-        <ScrollView >
+        
 
 
     <CalendarStrip
@@ -79,18 +93,43 @@ export default class Calendar extends React.Component {
       this.getAppointments(selectedDate)
     }}
       daySelectionAnimation={{type: 'border', duration: 200, borderWidth: 1, borderHighlightColor: 'grey'}}
-      style={{height:150, paddingTop: 20, paddingBottom: 10}}
+      style={{height:140, paddingTop: 20, paddingBottom: 10}}
     />
 
 
-
-    {/* <AddForm /> */}
+    
  
-  <Text>{this.state.appointments.map((el)=>{return(el.name) + "\n" })}</Text>
+  <Text h1 style={styles.appointments}>{this.state.appointments.map((el)=>{
 
+    let time = el.time;
+    
+    return (moment(time).format('LT') ) + " - " + (el.name) + " - " + (el.description) + "\n"
+    })}</Text>
+
+  
+
+          <ScrollView>
+          
+        {this.showForm()}
+      
         </ScrollView>
     </View>
     );
   }
   }
+
+  const styles = StyleSheet.create({
+
+      button: {
+          alignSelf: 'center',
+          margin: 15, 
+          padding: 15
+      },
+
+      appointments: {
+        alignSelf: 'center'
+      },
+    
+     
+  });
 
