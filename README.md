@@ -5,13 +5,13 @@
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1 -26th| Project Description, Wireframes / Priority Matrix / Functional Components | Complete
-|Day 2 -27th| Core Application Structure / Components / Database| Incomplete
-|Day 3 -28th| Code Day | Incomplete
-|Day 4 -1st| Code Day | Incomplete
-|Day 5 -2nd| MVP | Incomplete
-|Day 6 -3rd| Post MVP Coding | Incomplete
-|Day 7 -4th| Post MVP Coding | Incomplete
-|Day 8 -5th| Post MVP Coding | Incomplete
+|Day 2 -27th| Core Application Structure / Components / Database| Complete
+|Day 3 -28th| Code Day | Complete
+|Day 4 -1st| Code Day | Complete
+|Day 5 -2nd| MVP | Complete
+|Day 6 -3rd| Post MVP Coding | Complete
+|Day 7 -4th| Post MVP Coding | Complete
+|Day 8 -5th| Post MVP Coding | Complete
 |Day 9 -6th| Present | Incomplete
 
 
