@@ -12,7 +12,7 @@
 |Day 6 -3rd| Post MVP Coding | Complete
 |Day 7 -4th| Post MVP Coding | Complete
 |Day 8 -5th| Post MVP Coding | Complete
-|Day 9 -6th| Present | Incomplete
+|Day 9 -6th| Present | Complete
 
 
 ## Project Description
